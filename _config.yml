@@ -6,11 +6,11 @@ description: 欢迎来到我的个人博客
 avatarTitle: anmour
 # 头像里面的描述
 avatarDesc: Travel/Life
-# url: "http://baixin.io"
+# url: "http://anmourchen.github.io"
 
 # Comment
 comment:
-    disqus: anmour
+    disqus: yanfeichen
     # gitment: xxx // 需要修改 comments.html中的client_id和client_secret
     # uyan: 2143225  # 有言id,登录有言官网申请
 
