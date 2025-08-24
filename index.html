@@ -1,34 +1,238 @@
----
-layout: default
----
+<!doctype html>
+<html lang="en">
 
-<div class="main-post-list hidden">
+<head>
 
-  <ol class="post-list">
-    {% for post in paginator.posts %}
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="{{ post.url }}" title="访问 {{ post.title }}">{{ post.title }}</a></h2>
-      <p class="excerpt">{{ post.content | strip_html | strip_newlines | truncate: 250 }}&hellip;</p>
-      <div class="post-list__meta">        
-        <time datetime="{{post.date | date: date_to_xmlschema}}" class="post-list__meta--date date">
-          <img src="/images/calendar.png" width="20px" /> 
-          {{ post.date | date: "%F"}}</time> 
-        <div class = "tag-img-icon">
-          <img src="/images/tag-icon.svg" width="20px" /> 
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Research Engineer, Google">
+    <meta name="author" content="Yanfei Chen">
+    <meta name="theme-color" content="#222222">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/nicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/nicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/nicons/favicon-16x16.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style-2.css">
+
+    <title>Yanfei Chen</title>
+</head>
+
+<body>
+    <!-- <h1>Hello, world!</h1> -->
+    <div class="container pt-5 allstuffp">
+        <div class="row pt-5 allstuff">
+            <div class="col-md-4 pt-5">
+                <div class="fixed-posi">
+                    <p class="name">Yanfei Chen</p>
+                    <img src="images/profile-pixel.png" class="profilepic pt-3 pb-3">
+                    <div class=""><a class="menulink" target="_blank"
+                            href="https://scholar.google.com/citations?user=qyua6O4AAAAJ">google scholar</a></div>
+                    <div class=""><a class="menulink" target="_blank" href="https://github.com/anmourchen">github
+                            profile</a></div>
+                    <div class=""><a class="menulink" target="_blank"
+                            href="https://www.linkedin.com/in/chenyanfei/">linkedin</a></div>
+                    <div class=""><a class="menulink" target="_blank" href="https://x.com/anmourchen">X</a></div>
+
+
+                    <!-- <div class="pt-5">usercontext</div> -->
+                    <!-- <div class="">travel history</div> -->
+                    <!-- <div class="">this template</div> -->
+                </div>
+            </div>
+            <div class="col-md-8 pt-5 about">
+                I am a Research Engineer at <a class="in-text" href="https://research.google/teams/cloud-ai/"
+                    target="_blank">Google Cloud AI Research</a>. I am interested in using LLMs to solve practical
+                problems, specifically, retrieval augmented generation (RAG), tool learning and LLM agents. <br> <br>
+
+
+                I earned my PhD in Industrial Engineering at University of Pittsburgh, advised by Professor <a
+                    class="in-text" href="https://sites.google.com/view/chun-lab/home" target="_blank">Young Jae
+                    Chun</a>.
+                My research interests were structural modeling and analysis on implantable medical devices. <br> <br>
+
+
+                I graduated with a BS in Electrical Engineering and Economics from Peking University.
+
+                <p class="header pt-5">Experience</p>
+                <div class="py-2">
+                    2020 - Present, Software Engineer / Research Engineer, Google <br>
+                    2018 - 2020, Machine Learning Research Engineer, Qeexo (now TDK SensEI) <br>
+                </div>
+
+                <p class="header pt-5">Education</p>
+                <div class="py-2">
+                    PhD, Industrial Engineering, University of Pittsburgh <br>
+                    BS, Economics, Peking University <br>
+                    BS, Electrical Engineering, Peking University <br>
+                </div>
+
+
+                <p class="header pt-5">Publications</p>
+                <div class="py-2">
+                    <p class="paper my-2 pl-2">
+                        <span class="papertitle">Deep Researcher with Test-Time Diffusion</span><br>
+                        Rujun Han*, <span class="thisauthor">Yanfei Chen*</span>, Zoey CuiZhu, Lesly Miculicich, Guan
+                        Sun, Yuanjun Bi, Weiming Wen, Hui Wan, Chunfeng Wen, Solène Maître, George Lee, Vishy
+                        Tirumalashetty, Emily Xue, Zizhao Zhang, Salem Haykal, Burak Gokturk, Tomas Pfister, Chen-Yu Lee
+                        <span class="noter"> (* = Equal Contribution)</span><br>
+
+                        <a class="tag" href="https://arxiv.org/pdf/2507.16075" target="_blank">pdf</a><span
+                            class="tagsep">|</span>
+                        <a class="tag" href="https://arxiv.org/abs/2507.16075" target="_blank">abstract</a><span
+                            class="tagsep"></span>
+                    </p>
+                </div>
+                <div class="py-2">
+                    <p class="paper my-2 pl-2">
+                        <span class="papertitle">PlanGEN: A Multi-Agent Framework for Generating Planning and Reasoning
+                            Trajectories for Complex Problem Solving</span><br>
+                        Mihir Parmar, Xin Liu, Palash Goyal, <span class="thisauthor">Yanfei Chen</span>, Long Le,
+                        Swaroop Mishra, Hossein Mobahi, Jindong Gu, Zifeng Wang, Hootan Nakhost, Chitta Baral, Chen-Yu
+                        Lee, Tomas Pfister, Hamid Palangi<br>
+                        <span class="conf">EMNLP 2025 | Annual Conference on Empirical Methods in Natural Language
+                            Processing</span><br>
+
+                        <a class="tag" href="https://arxiv.org/pdf/2502.16111" target="_blank">pdf</a><span
+                            class="tagsep">|</span>
+                        <a class="tag" href="https://arxiv.org/abs/2502.16111" target="_blank">abstract</a><span
+                            class="tagsep"></span>
+                    </p>
+                </div>
+                <div class="py-2">
+                    <p class="paper my-2 pl-2">
+                        <span class="papertitle">Towards Compute-Optimal Many-Shot In-Context Learning</span><br>
+                        Shahriar Golchin, <span class="thisauthor">Yanfei Chen</span>, Rujun Han, Manan Gandhi,
+                        Tianli Yu, Swaroop Mishra, Mihai Surdeanu, Rishabh Agarwal, Chen-Yu Lee, Tomas Pfister<br>
+                        <span class="conf">COLM 2025 | Conference on Language Modeling</span><br>
+
+                        <a class="tag" href="https://arxiv.org/pdf/2507.16217" target="_blank">pdf</a><span
+                            class="tagsep">|</span>
+                        <a class="tag" href="https://arxiv.org/abs/2507.16217" target="_blank">abstract</a><span
+                            class="tagsep"></span>
+                    </p>
+                </div>
+                <div class="py-2">
+                    <p class="paper my-2 pl-2">
+                        <span class="papertitle">In prospect and retrospect: Reflective memory management for long-term
+                            personalized dialogue agents</span><br>
+                        Zhen Tan, Jun Yan, I-Hung Hsu, Rujun Han, Zifeng Wang, Long T Le, Yiwen Song, <span
+                            class="thisauthor">Yanfei Chen</span>, Hamid Palangi, George Lee, Anand Iyer, Tianlong Chen,
+                        Huan Liu, Chen-Yu Lee, Tomas Pfister<br>
+                        <span class="conf">ACL 2025 | Annual Meeting of the Association for Computational
+                            Linguistics</span><br>
+                        <a class="tag" href="https://aclanthology.org/2025.acl-long.413.pdf"
+                            target="_blank">pdf</a><span class="tagsep">|</span>
+                        <a class="tag" href="https://aclanthology.org/2025.acl-long.413"
+                            target="_blank">abstract</a><span class="tagsep"></span>
+                    </p>
+                </div>
+                <div class="py-2">
+                    <p class="paper my-2 pl-2">
+                        <span class="papertitle">Magnet: Multi-turn tool-use data synthesis and distillation via graph
+                            translation</span><br>
+                        Fan Yin, Zifeng Wang, I-Hung Hsu, Jun Yan, Ke Jiang, <span class="thisauthor">Yanfei
+                            Chen</span>, Jindong Gu, Long T Le, Kai-Wei Chang, Chen-Yu Lee, Hamid Palangi, Tomas
+                        Pfister<br>
+                        <span class="conf">ACL 2025 | Annual Meeting of the Association for Computational
+                            Linguistics</span><br>
+                        <a class="tag" href="https://aclanthology.org/2025.acl-long.1566.pdf"
+                            target="_blank">pdf</a><span class="tagsep">|</span>
+                        <a class="tag" href="https://aclanthology.org/2025.acl-long.1566"
+                            target="_blank">abstract</a><span class="tagsep"></span>
+                    </p>
+                </div>
+                <div class="py-2">
+                    <p class="paper my-2 pl-2">
+                        <span class="papertitle">Tablerag: Million-token table understanding with language
+                            models</span><br>
+                        Si-An Chen, Lesly Miculicich, Julian Eisenschlos, Zifeng Wang, Zilong Wang, <span
+                            class="thisauthor">Yanfei
+                            Chen</span>, Yasuhisa Fujii, Hsuan-Tien Lin, Chen-Yu Lee, Tomas Pfister<br>
+                        <span class="conf">NeurIPS 2024 | Annual Conference on Neural Information Processing
+                            Systems</span><br>
+                        <a class="tag"
+                            href="https://proceedings.neurips.cc/paper_files/paper/2024/file/88dd7aa6979e352fda7c4952ca8eac59-Paper-Conference.pdf"
+                            target="_blank">pdf</a><span class="tagsep">|</span>
+                        <a class="tag"
+                            href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/88dd7aa6979e352fda7c4952ca8eac59-Abstract-Conference.html"
+                            target="_blank">abstract</a><span class="tagsep"></span>
+                    </p>
+                </div>
+                <div class="py-2">
+                    <p class="paper my-2 pl-2">
+                        <span class="papertitle">Chain of agents: Large language models collaborating on long-context
+                            tasks</span><br>
+                        Yusen Zhang, Ruoxi Sun, <span class="thisauthor">Yanfei
+                            Chen</span>, Tomas Pfister, Rui Zhang, Sercan Arik<br>
+                        <span class="conf">NeurIPS 2024 | Annual Conference on Neural Information Processing
+                            Systems</span><br>
+                        <a class="tag"
+                            href="https://proceedings.neurips.cc/paper_files/paper/2024/file/ee71a4b14ec26710b39ee6be113d7750-Paper-Conference.pdf"
+                            target="_blank">pdf</a><span class="tagsep">|</span>
+                        <a class="tag"
+                            href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/ee71a4b14ec26710b39ee6be113d7750-Abstract-Conference.html"
+                            target="_blank">abstract</a><span class="tagsep"></span>
+                    </p>
+                </div>
+                <div class="py-2">
+                    <p class="paper my-2 pl-2">
+                        <span class="papertitle">Re-invoke: Tool invocation rewriting for zero-shot tool
+                            retrieval</span><br>
+                        <span class="thisauthor">Yanfei
+                            Chen</span>, Jinsung Yoon, Devendra Singh Sachan, Qingze Wang, Vincent Cohen-Addad,
+                        Mohammadhossein Bateni, Chen-Yu Lee, Tomas Pfister<br>
+                        <span class="conf">EMNLP 2024 | Annual Conference on Empirical Methods in Natural Language
+                            Processing</span><br>
+
+                        <a class="tag" href="https://aclanthology.org/2024.findings-emnlp.270.pdf"
+                            target="_blank">pdf</a><span class="tagsep">|</span>
+                        <a class="tag" href="https://aclanthology.org/2024.findings-emnlp.270"
+                            target="_blank">abstract</a><span class="tagsep"></span>
+                    </p>
+                </div>
+                <div class="py-2">
+                    <p class="paper my-2 pl-2">
+                        <span class="papertitle">Search-Adaptor: Embedding Customization for Information
+                            Retrieval</span><br>
+                        Jinsung Yoon, <span class="thisauthor">Yanfei
+                            Chen</span>, Sercan Arik, Tomas Pfister<br>
+                        <span class="conf">ACL 2024 | Annual Meeting of the Association for Computational
+                            Linguistics</span><br>
+
+                        <a class="tag" href="https://aclanthology.org/2024.acl-long.661.pdf"
+                            target="_blank">pdf</a><span class="tagsep">|</span>
+                        <a class="tag" href="https://aclanthology.org/2024.acl-long.661"
+                            target="_blank">abstract</a><span class="tagsep"></span>
+                    </p>
+                </div>
+
+                Check out my <a class="in-text" href="https://scholar.google.com/citations?user=qyua6O4AAAAJ"
+                    target="_blank">Google Scholar</a> for a list of my previous publications.
+
+            </div>
+
         </div>
-        <a href="/tags">
-          <div class = "post-list-icon-mate">
-            <span class="post-list__meta--tags-right">{{ post.tags }}</span>
-          </div>
-          <div class = "post-list-small-mate">
-          <a class="btn-border-small" href={{ post.url }}>阅读全文 » </a>
-          </div>
-      </div>
-      <hr class="post-list__divider" />
-    </li>
-    {% endfor %}
-  </ol>
+    </div>
 
-  {% include pagination.html %}
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="assets/style-2.js"></script>
+</body>
+<style>
+</style>
 
-</div>
+</html>
