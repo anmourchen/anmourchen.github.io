@@ -23,6 +23,31 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #f2efef;">
+        <div class="container">
+            <a class="navbar-brand" href="#">Yanfei Chen</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#publications">Publications</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <!-- <h1>Hello, world!</h1> -->
     <div class="container pt-5 allstuffp">
         <div class="row pt-5 allstuff">
@@ -44,26 +69,39 @@
                     <!-- <div class="">this template</div> -->
                 </div>
             </div>
-            <div class="col-md-8 pt-5 about">
-                I am a Research Engineer at <a class="in-text" href="https://research.google/teams/cloud-ai/"
+            <div class="col-md-8 pt-5 about" id="about">
+                I am a Staff Research Engineer at <a class="in-text" href="https://research.google/teams/cloud-ai/"
                     target="_blank">Google Cloud AI Research</a>. My work focuses on using LLMs to solve practical
                 problems, specifically in areas such as retrieval augmented generation (RAG), tool learning, and LLM
                 agents.<br> <br>
+
+                I'm the core contributor of
+                <a class="in-text" href="https://cloud.google.com/anti-money-laundering-ai" target="_blank"> Google Anti
+                    Money Laundering AI</a>, <a class="in-text"
+                    href="https://docs.cloud.google.com/generative-ai-app-builder/docs" target="_blank"> Vertex AI
+                    Search</a>, <a class="in-text"
+                    href="https://docs.cloud.google.com/gemini/enterprise/docs/research-assistant" target="_blank">
+                    Gemini Enterprise Deep Research</a> and <a class="in-text"
+                    href="https://docs.cloud.google.com/agent-builder/agent-engine/memory-bank/overview"
+                    target="_blank"> Vertex AI Agent Engine Memory Bank</a>. <br><br>
 
                 I earned my PhD in Industrial Engineering from the University of Pittsburgh, where I was advised by
                 Professor <a class="in-text" href="https://sites.google.com/view/chun-lab/home" target="_blank">Young
                     Jae Chun</a>. My doctoral research focused on structural modeling and analysis of implantable
                 medical devices.<br> <br>
 
-                I graduated with a BS in Electrical Engineering and Economics from Peking University.
+                I graduated with a BS in Electrical Engineering and Economics from Peking University. <br><br>
 
-                <p class="header pt-5">Experience</p>
+                Please <a href="mailto:anmourchen@gmail.com">email me</a> if you are interested in working with me or
+                joining our team.
+
+                <p class="header pt-5" id="experience">Experience</p>
                 <div class="py-2">
                     2020 - Present, Software Engineer / Research Engineer, Google <br>
                     2018 - 2020, Machine Learning Research Engineer, Qeexo (now TDK SensEI) <br>
                 </div>
 
-                <p class="header pt-5">Education</p>
+                <p class="header pt-5" id="education">Education</p>
                 <div class="py-2">
                     PhD, Industrial Engineering, University of Pittsburgh <br>
                     BS, Economics, Peking University <br>
@@ -71,7 +109,7 @@
                 </div>
 
 
-                <p class="header pt-5">Publications</p>
+                <p class="header pt-5" id="publications">Publications</p>
                 <div class="py-2">
                     <p class="paper my-2 pl-2">
                         <span class="papertitle">Deep Researcher with Test-Time Diffusion</span><br>
@@ -83,6 +121,50 @@
                         <a class="tag" href="https://arxiv.org/pdf/2507.16075" target="_blank">pdf</a><span
                             class="tagsep">|</span>
                         <a class="tag" href="https://arxiv.org/abs/2507.16075" target="_blank">abstract</a><span
+                            class="tagsep"></span>
+                    </p>
+                </div>
+                <div class="py-2">
+                    <p class="paper my-2 pl-2">
+                        <span class="papertitle">SAGE: Steerable Agentic Data Generation for Deep Search with Execution
+                            Feedback</span><br>
+                        Fangyuan Xu, Rujun Han, <span class="thisauthor">Yanfei Chen</span>, Zifeng Wang, I-Hung Hsu,
+                        Jun Yan, Vishy Tirumalashetty, Eunsol Choi, Tomas Pfister, Chen-Yu Lee<br>
+                        <span class="conf">EACL 2026 | Conference of the European Chapter of the Association for
+                            Computational Linguistics</span><br>
+
+                        <a class="tag" href="https://aclanthology.org/2026.findings-eacl.174.pdf"
+                            target="_blank">pdf</a><span class="tagsep">|</span>
+                        <a class="tag" href="https://aclanthology.org/2026.findings-eacl.174/"
+                            target="_blank">abstract</a><span class="tagsep"></span>
+                    </p>
+                </div>
+                <div class="py-2">
+                    <p class="paper my-2 pl-2">
+                        <span class="papertitle">Supervised reinforcement learning: From expert trajectories to
+                            step-wise reasoning</span><br>
+                        Yihe Deng, I Hsu, Jun Yan, Zifeng Wang, Rujun Han, Gufeng Zhang, <span class="thisauthor">Yanfei
+                            Chen</span>, Wei Wang, Tomas Pfister, Chen-Yu Lee<br>
+                        <span class="conf">ICLR 2026 | International Conference on Learning Representations</span><br>
+
+                        <a class="tag" href="https://arxiv.org/pdf/2510.25992" target="_blank">pdf</a><span
+                            class="tagsep">|</span>
+                        <a class="tag" href="https://arxiv.org/abs/2510.25992" target="_blank">abstract</a><span
+                            class="tagsep"></span>
+                    </p>
+                </div>
+                <div class="py-2">
+                    <p class="paper my-2 pl-2">
+                        <span class="papertitle">Reasoningbank: Scaling agent self-evolving with reasoning
+                            memory</span><br>
+                        Siru Ouyang, Jun Yan, I Hsu, <span class="thisauthor">Yanfei Chen</span>, Ke Jiang, Zifeng
+                        Wang, Rujun Han, Long T Le, Samira Daruki, Xiangru Tang, Vishy Tirumalashetty, George Lee,
+                        Mahsan Rofouei, Hangfei Lin, Jiawei Han, Chen-Yu Lee, Tomas Pfister<br>
+                        <span class="conf">ICLR 2026 | International Conference on Learning Representations</span><br>
+
+                        <a class="tag" href="https://arxiv.org/pdf/2509.25140" target="_blank">pdf</a><span
+                            class="tagsep">|</span>
+                        <a class="tag" href="https://arxiv.org/abs/2509.25140" target="_blank">abstract</a><span
                             class="tagsep"></span>
                     </p>
                 </div>
@@ -213,10 +295,32 @@
                 Check out my <a class="in-text" href="https://scholar.google.com/citations?user=qyua6O4AAAAJ"
                     target="_blank">Google Scholar</a> for a list of my previous publications.
 
+
+                <p class="header pt-5" id="hobbies">Hobbies</p>
+                <div class="py-2">
+                    Reading, photography, traveling <br>
+                    Watching NFL games, let's go Steelers! <br>
+                </div>
+
+                <p class="header pt-5" id="academic">Academic Services</p>
+                <div class="py-2">
+                    <b>Reviewer</b>: ARR, NeurIPS (Outstanding Reviewer'25)
+                </div>
             </div>
 
         </div>
     </div>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Add space to the bottom of the page */
+        body {
+            padding-bottom: 100px;
+        }
+    </style>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
