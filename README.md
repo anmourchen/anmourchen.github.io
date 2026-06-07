@@ -1,31 +1,24 @@
-# Minimal Research Theme :microscope:
+# anmourchen.github.io
 
-Just a plain, simple and elegant one-page theme for research/academia.
+Personal academic website of **Yanfei Chen**, Staff Research Engineer at Google Cloud AI Research.
 
-## Just turn the knobs!
-* For those who just want a quick website, just make changes to style.js.
-* For those who know web dev, the browser is yours, play around.
+Live at <https://anmourchen.github.io/>.
 
-## Examples
-These are some examples of how you can get creative.
+## Stack
 
-with style.js and style.css:
-![Example1](assets/example1.png)
+A single static page — no build step, no runtime framework.
 
-with style-1.js and style-1.css:
-![Example2](assets/example2.png)
+- `index.html` — all content (bio, experience, education, publications, service).
+- `assets/main.css` — self-contained styles with light/dark theming via CSS variables.
+- `assets/main.js` — theme toggle and the Selected/All publications switch.
+- `images/` — profile photo and favicons.
 
-with style-2.js and style-2.css:
-![Example3](assets/example3.png)
+## Editing
 
-with style-3.js and style-3.css:
-![Example4](assets/example4.png)
+- **Add a publication:** copy a `.paper` block inside the matching `.year-group` in
+  `index.html`. Add `data-selected="true"` to feature it in the *Selected* view, and set the
+  venue badge with `<span class="badge" data-venue="NeurIPS">NeurIPS 2024</span>` (recognized
+  venues: NeurIPS, ICLR, ACL, EMNLP, EACL, COLM, arXiv).
+- **Theme colors / spacing:** edit the CSS variables at the top of `assets/main.css`.
 
-## Currently Living @
-[Sebastin Santy](http://sebastinsanty.com/), [Pratik Joshi](https://pratikmjoshi.github.io/)
-
-If you are using this template, thank you! Do send a pull request if you would like your name here.
-
-
-
-
+Deployed automatically via GitHub Pages on push to `master`.

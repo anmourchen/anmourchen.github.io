@@ -1,341 +1,439 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
-
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Research Engineer, Google">
+
+    <title>Yanfei Chen — Staff Research Engineer, Google Cloud AI Research</title>
+    <meta name="description"
+        content="Yanfei Chen is a Staff Research Engineer at Google Cloud AI Research working on LLMs, retrieval-augmented generation (RAG), tool learning, and LLM agents.">
     <meta name="author" content="Yanfei Chen">
-    <meta name="theme-color" content="#222222">
+    <meta name="keywords"
+        content="Yanfei Chen, AI researcher, LLM, large language models, RAG, retrieval augmented generation, LLM agents, tool learning, Google Cloud AI Research, deep research">
+    <link rel="canonical" href="https://anmourchen.github.io/">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0e1116" media="(prefers-color-scheme: dark)">
+
+    <!-- Open Graph / social -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Yanfei Chen — Staff Research Engineer, Google Cloud AI Research">
+    <meta property="og:description"
+        content="Research on LLMs, retrieval-augmented generation (RAG), tool learning, and LLM agents.">
+    <meta property="og:url" content="https://anmourchen.github.io/">
+    <meta property="og:image" content="https://anmourchen.github.io/images/profile-pixel.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@anmourchen">
+    <meta name="twitter:title" content="Yanfei Chen — Staff Research Engineer, Google Cloud AI Research">
+    <meta name="twitter:description"
+        content="Research on LLMs, retrieval-augmented generation (RAG), tool learning, and LLM agents.">
+    <meta name="twitter:image" content="https://anmourchen.github.io/images/profile-pixel.png">
 
     <link rel="apple-touch-icon" sizes="180x180" href="images/nicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/nicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/nicons/favicon-16x16.png">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/style-2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/main.css">
 
-    <title>Yanfei Chen</title>
+    <!-- Apply saved/system theme before paint to avoid flash -->
+    <script>
+        (function () {
+            try {
+                var saved = localStorage.getItem("theme");
+                var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+                document.documentElement.dataset.theme = saved || (prefersDark ? "dark" : "light");
+            } catch (e) { }
+        })();
+    </script>
+
+    <!-- Structured data: Person -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Yanfei Chen",
+      "url": "https://anmourchen.github.io/",
+      "image": "https://anmourchen.github.io/images/profile-pixel.png",
+      "jobTitle": "Staff Research Engineer",
+      "worksFor": { "@type": "Organization", "name": "Google Cloud AI Research" },
+      "alumniOf": [
+        { "@type": "CollegeOrUniversity", "name": "University of Pittsburgh" },
+        { "@type": "CollegeOrUniversity", "name": "Peking University" }
+      ],
+      "knowsAbout": ["Large Language Models", "Retrieval-Augmented Generation", "LLM Agents", "Tool Learning", "Machine Learning"],
+      "sameAs": [
+        "https://scholar.google.com/citations?user=qyua6O4AAAAJ",
+        "https://github.com/anmourchen",
+        "https://www.linkedin.com/in/chenyanfei/",
+        "https://x.com/anmourchen"
+      ]
+    }
+    </script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #f2efef;">
-        <div class="container">
-            <a class="navbar-brand" href="#">Yanfei Chen</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#education">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#publications">Publications</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- <h1>Hello, world!</h1> -->
-    <div class="container pt-5 allstuffp">
-        <div class="row pt-5 allstuff">
-            <div class="col-md-4 pt-5">
-                <div class="fixed-posi">
-                    <p class="name">Yanfei Chen</p>
-                    <img src="images/profile-pixel.png" class="profilepic pt-3 pb-3">
-                    <div class=""><a class="menulink" target="_blank"
-                            href="https://scholar.google.com/citations?user=qyua6O4AAAAJ">google scholar</a></div>
-                    <div class=""><a class="menulink" target="_blank" href="https://github.com/anmourchen">github
-                            profile</a></div>
-                    <div class=""><a class="menulink" target="_blank"
-                            href="https://www.linkedin.com/in/chenyanfei/">linkedin</a></div>
-                    <div class=""><a class="menulink" target="_blank" href="https://x.com/anmourchen">X</a></div>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+        </svg>
+    </button>
 
+    <div class="wrap">
+        <!-- ===================== Sidebar ===================== -->
+        <aside class="sidebar">
+            <img src="images/profile-pixel.png" alt="Yanfei Chen" class="profilepic">
+            <h1 class="side-name">Yanfei Chen</h1>
+            <p class="side-role">Google</p>
+            <nav class="links">
+                <a target="_blank" rel="noopener" href="https://scholar.google.com/citations?user=qyua6O4AAAAJ">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3L1 9l11 6 9-4.9V17h2V9L12 3zM5 13.2v3.3l7 3.8 7-3.8v-3.3l-7 3.8-7-3.8z"/></svg>
+                    Google Scholar
+                </a>
+                <a target="_blank" rel="noopener" href="https://github.com/anmourchen">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0C17.3 4.8 18.3 5.1 18.3 5.1c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+                    GitHub
+                </a>
+                <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/chenyanfei/">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33 0-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+                    LinkedIn
+                </a>
+                <a target="_blank" rel="noopener" href="https://x.com/anmourchen">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.66l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.01 4.13H5.04l12.04 15.64z"/></svg>
+                    X / Twitter
+                </a>
+                <a href="mailto:anmourchen@gmail.com">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    Email
+                </a>
+            </nav>
+        </aside>
 
-                    <!-- <div class="pt-5">usercontext</div> -->
-                    <!-- <div class="">travel history</div> -->
-                    <!-- <div class="">this template</div> -->
+        <!-- ===================== Main ===================== -->
+        <main class="main">
+            <h2 class="hero-name">Yanfei Chen</h2>
+            <p class="hero-sub">Google</p>
+
+            <section class="about" id="about">
+                <p>
+                    I am a Staff Research Engineer at
+                    <a class="in-text" href="https://research.google/teams/cloud-ai/" target="_blank" rel="noopener">Google
+                        Cloud AI Research</a>. My work focuses on using large language models to solve practical
+                    problems, specifically in areas such as retrieval-augmented generation (RAG), tool learning, and
+                    LLM agents.
+                </p>
+                <p>
+                    I'm a core contributor of
+                    <a class="in-text" href="https://cloud.google.com/anti-money-laundering-ai" target="_blank" rel="noopener">Google
+                        Anti Money Laundering AI</a>,
+                    <a class="in-text" href="https://docs.cloud.google.com/generative-ai-app-builder/docs" target="_blank" rel="noopener">Vertex
+                        AI Search</a>,
+                    <a class="in-text" href="https://docs.cloud.google.com/gemini/enterprise/docs/research-assistant" target="_blank" rel="noopener">Gemini
+                        Enterprise Deep Research</a>, and
+                    <a class="in-text" href="https://docs.cloud.google.com/agent-builder/agent-engine/memory-bank/overview" target="_blank" rel="noopener">Vertex
+                        AI Agent Engine Memory Bank</a>.
+                </p>
+                <p>
+                    I earned my PhD in Industrial Engineering from the University of Pittsburgh, where I was advised by
+                    Professor
+                    <a class="in-text" href="https://sites.google.com/view/chun-lab/home" target="_blank" rel="noopener">Young
+                        Jae Chun</a>. My doctoral research focused on structural modeling and analysis of implantable
+                    medical devices. I graduated with a BS in Electrical Engineering and Economics from Peking
+                    University.
+                </p>
+                <p>
+                    Please <a class="in-text" href="mailto:anmourchen@gmail.com">email me</a> if you are interested in
+                    working with me or joining our team.
+                </p>
+            </section>
+
+            <!-- ===================== Experience ===================== -->
+            <section id="experience">
+                <h3 class="header">Experience</h3>
+                <div class="entry">
+                    <span class="when">2020 — Now</span>
+                    <span class="what"><span class="org">Google</span> <span class="sub">— Software Engineer /
+                            Research Engineer</span></span>
                 </div>
-            </div>
-            <div class="col-md-8 pt-5 about" id="about">
-                I am a Staff Research Engineer at <a class="in-text" href="https://research.google/teams/cloud-ai/"
-                    target="_blank">Google Cloud AI Research</a>. My work focuses on using LLMs to solve practical
-                problems, specifically in areas such as retrieval augmented generation (RAG), tool learning, and LLM
-                agents.<br> <br>
-
-                I'm the core contributor of
-                <a class="in-text" href="https://cloud.google.com/anti-money-laundering-ai" target="_blank"> Google Anti
-                    Money Laundering AI</a>, <a class="in-text"
-                    href="https://docs.cloud.google.com/generative-ai-app-builder/docs" target="_blank"> Vertex AI
-                    Search</a>, <a class="in-text"
-                    href="https://docs.cloud.google.com/gemini/enterprise/docs/research-assistant" target="_blank">
-                    Gemini Enterprise Deep Research</a> and <a class="in-text"
-                    href="https://docs.cloud.google.com/agent-builder/agent-engine/memory-bank/overview"
-                    target="_blank"> Vertex AI Agent Engine Memory Bank</a>. <br><br>
-
-                I earned my PhD in Industrial Engineering from the University of Pittsburgh, where I was advised by
-                Professor <a class="in-text" href="https://sites.google.com/view/chun-lab/home" target="_blank">Young
-                    Jae Chun</a>. My doctoral research focused on structural modeling and analysis of implantable
-                medical devices.<br> <br>
-
-                I graduated with a BS in Electrical Engineering and Economics from Peking University. <br><br>
-
-                Please <a href="mailto:anmourchen@gmail.com">email me</a> if you are interested in working with me or
-                joining our team.
-
-                <p class="header pt-5" id="experience">Experience</p>
-                <div class="py-2">
-                    2020 - Present, Software Engineer / Research Engineer, Google <br>
-                    2018 - 2020, Machine Learning Research Engineer, Qeexo (now TDK SensEI) <br>
+                <div class="entry">
+                    <span class="when">2018 — 2020</span>
+                    <span class="what"><span class="org">Qeexo</span> <span class="sub">(now TDK SensEI) — Machine
+                            Learning Research Engineer</span></span>
                 </div>
+            </section>
 
-                <p class="header pt-5" id="education">Education</p>
-                <div class="py-2">
-                    PhD, Industrial Engineering, University of Pittsburgh <br>
-                    BS, Economics, Peking University <br>
-                    BS, Electrical Engineering, Peking University <br>
+            <!-- ===================== Education ===================== -->
+            <section id="education">
+                <h3 class="header">Education</h3>
+                <div class="entry">
+                    <span class="when">PhD</span>
+                    <span class="what"><span class="org">University of Pittsburgh</span> <span class="sub">— Industrial
+                            Engineering</span></span>
                 </div>
+                <div class="entry">
+                    <span class="when">BS</span>
+                    <span class="what"><span class="org">Peking University</span> <span class="sub">— Electrical
+                            Engineering &amp; Economics</span></span>
+                </div>
+            </section>
 
-
-                <p class="header pt-5" id="publications">Publications</p>
-                <div class="py-2">
-                    <p class="paper my-2 pl-2">
-                        <span class="papertitle">Deep Researcher with Test-Time Diffusion</span><br>
-                        Rujun Han*, <span class="thisauthor">Yanfei Chen*</span>, Zoey CuiZhu, Lesly Miculicich, Guan
-                        Sun, Yuanjun Bi, Weiming Wen, Hui Wan, Chunfeng Wen, Solène Maître, George Lee, Vishy
-                        Tirumalashetty, Emily Xue, Zizhao Zhang, Salem Haykal, Burak Gokturk, Tomas Pfister, Chen-Yu Lee
-                        <span class="noter"> (* = Equal Contribution)</span><br>
-
-                        <a class="tag" href="https://arxiv.org/pdf/2507.16075" target="_blank">pdf</a><span
-                            class="tagsep">|</span>
-                        <a class="tag" href="https://arxiv.org/abs/2507.16075" target="_blank">abstract</a><span
-                            class="tagsep"></span>
-                    </p>
-                </div>
-                <div class="py-2">
-                    <p class="paper my-2 pl-2">
-                        <span class="papertitle">SAGE: Steerable Agentic Data Generation for Deep Search with Execution
-                            Feedback</span><br>
-                        Fangyuan Xu, Rujun Han, <span class="thisauthor">Yanfei Chen</span>, Zifeng Wang, I-Hung Hsu,
-                        Jun Yan, Vishy Tirumalashetty, Eunsol Choi, Tomas Pfister, Chen-Yu Lee<br>
-                        <span class="conf">EACL 2026 | Conference of the European Chapter of the Association for
-                            Computational Linguistics</span><br>
-
-                        <a class="tag" href="https://aclanthology.org/2026.findings-eacl.174.pdf"
-                            target="_blank">pdf</a><span class="tagsep">|</span>
-                        <a class="tag" href="https://aclanthology.org/2026.findings-eacl.174/"
-                            target="_blank">abstract</a><span class="tagsep"></span>
-                    </p>
-                </div>
-                <div class="py-2">
-                    <p class="paper my-2 pl-2">
-                        <span class="papertitle">Supervised reinforcement learning: From expert trajectories to
-                            step-wise reasoning</span><br>
-                        Yihe Deng, I Hsu, Jun Yan, Zifeng Wang, Rujun Han, Gufeng Zhang, <span class="thisauthor">Yanfei
-                            Chen</span>, Wei Wang, Tomas Pfister, Chen-Yu Lee<br>
-                        <span class="conf">ICLR 2026 | International Conference on Learning Representations</span><br>
-
-                        <a class="tag" href="https://arxiv.org/pdf/2510.25992" target="_blank">pdf</a><span
-                            class="tagsep">|</span>
-                        <a class="tag" href="https://arxiv.org/abs/2510.25992" target="_blank">abstract</a><span
-                            class="tagsep"></span>
-                    </p>
-                </div>
-                <div class="py-2">
-                    <p class="paper my-2 pl-2">
-                        <span class="papertitle">Reasoningbank: Scaling agent self-evolving with reasoning
-                            memory</span><br>
-                        Siru Ouyang, Jun Yan, I Hsu, <span class="thisauthor">Yanfei Chen</span>, Ke Jiang, Zifeng
-                        Wang, Rujun Han, Long T Le, Samira Daruki, Xiangru Tang, Vishy Tirumalashetty, George Lee,
-                        Mahsan Rofouei, Hangfei Lin, Jiawei Han, Chen-Yu Lee, Tomas Pfister<br>
-                        <span class="conf">ICLR 2026 | International Conference on Learning Representations</span><br>
-
-                        <a class="tag" href="https://arxiv.org/pdf/2509.25140" target="_blank">pdf</a><span
-                            class="tagsep">|</span>
-                        <a class="tag" href="https://arxiv.org/abs/2509.25140" target="_blank">abstract</a><span
-                            class="tagsep"></span>
-                    </p>
-                </div>
-                <div class="py-2">
-                    <p class="paper my-2 pl-2">
-                        <span class="papertitle">PlanGEN: A Multi-Agent Framework for Generating Planning and Reasoning
-                            Trajectories for Complex Problem Solving</span><br>
-                        Mihir Parmar, Xin Liu, Palash Goyal, <span class="thisauthor">Yanfei Chen</span>, Long Le,
-                        Swaroop Mishra, Hossein Mobahi, Jindong Gu, Zifeng Wang, Hootan Nakhost, Chitta Baral, Chen-Yu
-                        Lee, Tomas Pfister, Hamid Palangi<br>
-                        <span class="conf">EMNLP 2025 | Annual Conference on Empirical Methods in Natural Language
-                            Processing</span><br>
-
-                        <a class="tag" href="https://arxiv.org/pdf/2502.16111" target="_blank">pdf</a><span
-                            class="tagsep">|</span>
-                        <a class="tag" href="https://arxiv.org/abs/2502.16111" target="_blank">abstract</a><span
-                            class="tagsep"></span>
-                    </p>
-                </div>
-                <div class="py-2">
-                    <p class="paper my-2 pl-2">
-                        <span class="papertitle">Towards Compute-Optimal Many-Shot In-Context Learning</span><br>
-                        Shahriar Golchin, <span class="thisauthor">Yanfei Chen</span>, Rujun Han, Manan Gandhi,
-                        Tianli Yu, Swaroop Mishra, Mihai Surdeanu, Rishabh Agarwal, Chen-Yu Lee, Tomas Pfister<br>
-                        <span class="conf">COLM 2025 | Conference on Language Modeling</span><br>
-
-                        <a class="tag" href="https://arxiv.org/pdf/2507.16217" target="_blank">pdf</a><span
-                            class="tagsep">|</span>
-                        <a class="tag" href="https://arxiv.org/abs/2507.16217" target="_blank">abstract</a><span
-                            class="tagsep"></span>
-                    </p>
-                </div>
-                <div class="py-2">
-                    <p class="paper my-2 pl-2">
-                        <span class="papertitle">In prospect and retrospect: Reflective memory management for long-term
-                            personalized dialogue agents</span><br>
-                        Zhen Tan, Jun Yan, I-Hung Hsu, Rujun Han, Zifeng Wang, Long T Le, Yiwen Song, <span
-                            class="thisauthor">Yanfei Chen</span>, Hamid Palangi, George Lee, Anand Iyer, Tianlong Chen,
-                        Huan Liu, Chen-Yu Lee, Tomas Pfister<br>
-                        <span class="conf">ACL 2025 | Annual Meeting of the Association for Computational
-                            Linguistics</span><br>
-                        <a class="tag" href="https://aclanthology.org/2025.acl-long.413.pdf"
-                            target="_blank">pdf</a><span class="tagsep">|</span>
-                        <a class="tag" href="https://aclanthology.org/2025.acl-long.413"
-                            target="_blank">abstract</a><span class="tagsep"></span>
-                    </p>
-                </div>
-                <div class="py-2">
-                    <p class="paper my-2 pl-2">
-                        <span class="papertitle">Magnet: Multi-turn tool-use data synthesis and distillation via graph
-                            translation</span><br>
-                        Fan Yin, Zifeng Wang, I-Hung Hsu, Jun Yan, Ke Jiang, <span class="thisauthor">Yanfei
-                            Chen</span>, Jindong Gu, Long T Le, Kai-Wei Chang, Chen-Yu Lee, Hamid Palangi, Tomas
-                        Pfister<br>
-                        <span class="conf">ACL 2025 | Annual Meeting of the Association for Computational
-                            Linguistics</span><br>
-                        <a class="tag" href="https://aclanthology.org/2025.acl-long.1566.pdf"
-                            target="_blank">pdf</a><span class="tagsep">|</span>
-                        <a class="tag" href="https://aclanthology.org/2025.acl-long.1566"
-                            target="_blank">abstract</a><span class="tagsep"></span>
-                    </p>
-                </div>
-                <div class="py-2">
-                    <p class="paper my-2 pl-2">
-                        <span class="papertitle">Tablerag: Million-token table understanding with language
-                            models</span><br>
-                        Si-An Chen, Lesly Miculicich, Julian Eisenschlos, Zifeng Wang, Zilong Wang, <span
-                            class="thisauthor">Yanfei
-                            Chen</span>, Yasuhisa Fujii, Hsuan-Tien Lin, Chen-Yu Lee, Tomas Pfister<br>
-                        <span class="conf">NeurIPS 2024 | Annual Conference on Neural Information Processing
-                            Systems</span><br>
-                        <a class="tag"
-                            href="https://proceedings.neurips.cc/paper_files/paper/2024/file/88dd7aa6979e352fda7c4952ca8eac59-Paper-Conference.pdf"
-                            target="_blank">pdf</a><span class="tagsep">|</span>
-                        <a class="tag"
-                            href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/88dd7aa6979e352fda7c4952ca8eac59-Abstract-Conference.html"
-                            target="_blank">abstract</a><span class="tagsep"></span>
-                    </p>
-                </div>
-                <div class="py-2">
-                    <p class="paper my-2 pl-2">
-                        <span class="papertitle">Chain of agents: Large language models collaborating on long-context
-                            tasks</span><br>
-                        Yusen Zhang, Ruoxi Sun, <span class="thisauthor">Yanfei
-                            Chen</span>, Tomas Pfister, Rui Zhang, Sercan Arik<br>
-                        <span class="conf">NeurIPS 2024 | Annual Conference on Neural Information Processing
-                            Systems</span><br>
-                        <a class="tag"
-                            href="https://proceedings.neurips.cc/paper_files/paper/2024/file/ee71a4b14ec26710b39ee6be113d7750-Paper-Conference.pdf"
-                            target="_blank">pdf</a><span class="tagsep">|</span>
-                        <a class="tag"
-                            href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/ee71a4b14ec26710b39ee6be113d7750-Abstract-Conference.html"
-                            target="_blank">abstract</a><span class="tagsep"></span>
-                    </p>
-                </div>
-                <div class="py-2">
-                    <p class="paper my-2 pl-2">
-                        <span class="papertitle">Re-invoke: Tool invocation rewriting for zero-shot tool
-                            retrieval</span><br>
-                        <span class="thisauthor">Yanfei
-                            Chen</span>, Jinsung Yoon, Devendra Singh Sachan, Qingze Wang, Vincent Cohen-Addad,
-                        Mohammadhossein Bateni, Chen-Yu Lee, Tomas Pfister<br>
-                        <span class="conf">EMNLP 2024 | Annual Conference on Empirical Methods in Natural Language
-                            Processing</span><br>
-
-                        <a class="tag" href="https://aclanthology.org/2024.findings-emnlp.270.pdf"
-                            target="_blank">pdf</a><span class="tagsep">|</span>
-                        <a class="tag" href="https://aclanthology.org/2024.findings-emnlp.270"
-                            target="_blank">abstract</a><span class="tagsep"></span>
-                    </p>
-                </div>
-                <div class="py-2">
-                    <p class="paper my-2 pl-2">
-                        <span class="papertitle">Search-Adaptor: Embedding Customization for Information
-                            Retrieval</span><br>
-                        Jinsung Yoon, <span class="thisauthor">Yanfei
-                            Chen</span>, Sercan Arik, Tomas Pfister<br>
-                        <span class="conf">ACL 2024 | Annual Meeting of the Association for Computational
-                            Linguistics</span><br>
-
-                        <a class="tag" href="https://aclanthology.org/2024.acl-long.661.pdf"
-                            target="_blank">pdf</a><span class="tagsep">|</span>
-                        <a class="tag" href="https://aclanthology.org/2024.acl-long.661"
-                            target="_blank">abstract</a><span class="tagsep"></span>
-                    </p>
+            <!-- ===================== Publications ===================== -->
+            <section>
+                <h3 class="header">Publications</h3>
+                <div class="pub-toggle" role="group" aria-label="Publication view">
+                    <button type="button" data-view="selected" aria-pressed="true">Selected</button>
+                    <button type="button" data-view="all" aria-pressed="false">All</button>
                 </div>
 
-                Check out my <a class="in-text" href="https://scholar.google.com/citations?user=qyua6O4AAAAJ"
-                    target="_blank">Google Scholar</a> for a list of my previous publications.
+                <div id="publications" data-view="selected">
 
+                    <!-- ---------- 2026 ---------- -->
+                    <div class="year-group">
+                        <div class="year-head">2026</div>
 
-                <p class="header pt-5" id="hobbies">Hobbies</p>
-                <div class="py-2">
-                    Reading, photography, traveling <br>
-                    Watching NFL games, let's go Steelers! <br>
+                        <div class="paper">
+                            <span class="papertitle">SkillOS: Learning Skill Curation for Self-Evolving Agents</span>
+                            <span class="authors">Siru Ouyang, Jun Yan, <span class="thisauthor">Yanfei Chen</span>,
+                                Rujun Han, Zifeng Wang, Bhavana Dalvi Mishra, Rui Meng, Chun-Liang Li, Yizhu Jiao,
+                                Kaiwen Zha, Maohao Shen, Vishy Tirumalashetty, George Lee, Jiawei Han, Tomas Pfister,
+                                Chen-Yu Lee</span>
+                            <div class="pub-meta">
+                                <span class="badge" data-venue="arXiv">arXiv 2026</span>
+                                <a class="tag" href="https://arxiv.org/pdf/2605.06614" target="_blank" rel="noopener">pdf</a>
+                                <a class="tag" href="https://arxiv.org/abs/2605.06614" target="_blank" rel="noopener">abstract</a>
+                            </div>
+                        </div>
+
+                        <div class="paper">
+                            <span class="papertitle">RubricEM: Meta-RL with Rubric-guided Policy Decomposition beyond
+                                Verifiable Rewards</span>
+                            <span class="authors">Gaotang Li, Bhavana Dalvi Mishra, Zifeng Wang, Jun Yan, <span
+                                    class="thisauthor">Yanfei Chen</span>, Chun-Liang Li, Long T. Le, Rujun Han, George
+                                Lee, Hanghang Tong, Chen-Yu Lee, Tomas Pfister</span>
+                            <div class="pub-meta">
+                                <span class="badge" data-venue="arXiv">arXiv 2026</span>
+                                <a class="tag" href="https://arxiv.org/pdf/2605.10899" target="_blank" rel="noopener">pdf</a>
+                                <a class="tag" href="https://arxiv.org/abs/2605.10899" target="_blank" rel="noopener">abstract</a>
+                            </div>
+                        </div>
+
+                        <div class="paper" data-selected="true">
+                            <span class="papertitle">ReasoningBank: Scaling Agent Self-Evolving with Reasoning
+                                Memory</span>
+                            <span class="authors">Siru Ouyang, Jun Yan, I-Hung Hsu, <span class="thisauthor">Yanfei
+                                    Chen</span>, Ke Jiang, Zifeng Wang, Rujun Han, Long T. Le, Samira Daruki, Xiangru
+                                Tang, Vishy Tirumalashetty, George Lee, Mahsan Rofouei, Hangfei Lin, Jiawei Han, Chen-Yu
+                                Lee, Tomas Pfister</span>
+                            <div class="pub-meta">
+                                <span class="badge" data-venue="ICLR">ICLR 2026</span>
+                                <a class="tag" href="https://arxiv.org/pdf/2509.25140" target="_blank" rel="noopener">pdf</a>
+                                <a class="tag" href="https://arxiv.org/abs/2509.25140" target="_blank" rel="noopener">abstract</a>
+                            </div>
+                        </div>
+
+                        <div class="paper">
+                            <span class="papertitle">Supervised Reinforcement Learning: From Expert Trajectories to
+                                Step-wise Reasoning</span>
+                            <span class="authors">Yihe Deng, I-Hung Hsu, Jun Yan, Zifeng Wang, Rujun Han, Gufeng Zhang,
+                                <span class="thisauthor">Yanfei Chen</span>, Wei Wang, Tomas Pfister, Chen-Yu
+                                Lee</span>
+                            <div class="pub-meta">
+                                <span class="badge" data-venue="ICLR">ICLR 2026</span>
+                                <a class="tag" href="https://arxiv.org/pdf/2510.25992" target="_blank" rel="noopener">pdf</a>
+                                <a class="tag" href="https://arxiv.org/abs/2510.25992" target="_blank" rel="noopener">abstract</a>
+                            </div>
+                        </div>
+
+                        <div class="paper">
+                            <span class="papertitle">SAGE: Steerable Agentic Data Generation for Deep Search with
+                                Execution Feedback</span>
+                            <span class="authors">Fangyuan Xu, Rujun Han, <span class="thisauthor">Yanfei Chen</span>,
+                                Zifeng Wang, I-Hung Hsu, Jun Yan, Vishy Tirumalashetty, Eunsol Choi, Tomas Pfister,
+                                Chen-Yu Lee</span>
+                            <div class="pub-meta">
+                                <span class="badge" data-venue="EACL">EACL 2026</span>
+                                <a class="tag" href="https://aclanthology.org/2026.findings-eacl.174.pdf" target="_blank" rel="noopener">pdf</a>
+                                <a class="tag" href="https://aclanthology.org/2026.findings-eacl.174/" target="_blank" rel="noopener">abstract</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ---------- 2025 ---------- -->
+                    <div class="year-group">
+                        <div class="year-head">2025</div>
+
+                        <div class="paper">
+                            <span class="papertitle">Budget-Aware Tool-Use Enables Effective Agent Scaling</span>
+                            <span class="authors">Tengxiao Liu, Zifeng Wang, Jin Miao, I-Hung Hsu, Jun Yan, Jiefeng
+                                Chen, Rujun Han, Fangyuan Xu, <span class="thisauthor">Yanfei Chen</span>, Ke Jiang,
+                                Samira Daruki, Yi Liang, William Yang Wang, Tomas Pfister, Chen-Yu Lee</span>
+                            <div class="pub-meta">
+                                <span class="badge" data-venue="arXiv">arXiv 2025</span>
+                                <a class="tag" href="https://arxiv.org/pdf/2511.17006" target="_blank" rel="noopener">pdf</a>
+                                <a class="tag" href="https://arxiv.org/abs/2511.17006" target="_blank" rel="noopener">abstract</a>
+                            </div>
+                        </div>
+
+                        <div class="paper" data-selected="true">
+                            <span class="papertitle">Deep Researcher with Test-Time Diffusion</span>
+                            <span class="authors">Rujun Han*, <span class="thisauthor">Yanfei Chen*</span>, Zoey
+                                CuiZhu, Lesly Miculicich, Guan Sun, Yuanjun Bi, Weiming Wen, Hui Wan, Chunfeng Wen,
+                                Solène Maître, George Lee, Vishy Tirumalashetty, Emily Xue, Zizhao Zhang, Salem Haykal,
+                                Burak Gokturk, Tomas Pfister, Chen-Yu Lee <span class="noter">(* equal
+                                    contribution)</span></span>
+                            <div class="pub-meta">
+                                <span class="badge" data-venue="arXiv">arXiv 2025</span>
+                                <a class="tag" href="https://arxiv.org/pdf/2507.16075" target="_blank" rel="noopener">pdf</a>
+                                <a class="tag" href="https://arxiv.org/abs/2507.16075" target="_blank" rel="noopener">abstract</a>
+                            </div>
+                        </div>
+
+                        <div class="paper">
+                            <span class="papertitle">PlanGEN: A Multi-Agent Framework for Generating Planning and
+                                Reasoning Trajectories for Complex Problem Solving</span>
+                            <span class="authors">Mihir Parmar, Xin Liu, Palash Goyal, <span class="thisauthor">Yanfei
+                                    Chen</span>, Long Le, Swaroop Mishra, Hossein Mobahi, Jindong Gu, Zifeng Wang, Hootan
+                                Nakhost, Chitta Baral, Chen-Yu Lee, Tomas Pfister, Hamid Palangi</span>
+                            <div class="pub-meta">
+                                <span class="badge" data-venue="EMNLP">EMNLP 2025</span>
+                                <a class="tag" href="https://arxiv.org/pdf/2502.16111" target="_blank" rel="noopener">pdf</a>
+                                <a class="tag" href="https://arxiv.org/abs/2502.16111" target="_blank" rel="noopener">abstract</a>
+                            </div>
+                        </div>
+
+                        <div class="paper">
+                            <span class="papertitle">Towards Compute-Optimal Many-Shot In-Context Learning</span>
+                            <span class="authors">Shahriar Golchin, <span class="thisauthor">Yanfei Chen</span>, Rujun
+                                Han, Manan Gandhi, Tianli Yu, Swaroop Mishra, Mihai Surdeanu, Rishabh Agarwal, Chen-Yu
+                                Lee, Tomas Pfister</span>
+                            <div class="pub-meta">
+                                <span class="badge" data-venue="COLM">COLM 2025</span>
+                                <a class="tag" href="https://arxiv.org/pdf/2507.16217" target="_blank" rel="noopener">pdf</a>
+                                <a class="tag" href="https://arxiv.org/abs/2507.16217" target="_blank" rel="noopener">abstract</a>
+                            </div>
+                        </div>
+
+                        <div class="paper">
+                            <span class="papertitle">In Prospect and Retrospect: Reflective Memory Management for
+                                Long-term Personalized Dialogue Agents</span>
+                            <span class="authors">Zhen Tan, Jun Yan, I-Hung Hsu, Rujun Han, Zifeng Wang, Long T. Le,
+                                Yiwen Song, <span class="thisauthor">Yanfei Chen</span>, Hamid Palangi, George Lee, Anand
+                                Iyer, Tianlong Chen, Huan Liu, Chen-Yu Lee, Tomas Pfister</span>
+                            <div class="pub-meta">
+                                <span class="badge" data-venue="ACL">ACL 2025</span>
+                                <a class="tag" href="https://aclanthology.org/2025.acl-long.413.pdf" target="_blank" rel="noopener">pdf</a>
+                                <a class="tag" href="https://aclanthology.org/2025.acl-long.413" target="_blank" rel="noopener">abstract</a>
+                            </div>
+                        </div>
+
+                        <div class="paper">
+                            <span class="papertitle">Magnet: Multi-turn Tool-use Data Synthesis and Distillation via
+                                Graph Translation</span>
+                            <span class="authors">Fan Yin, Zifeng Wang, I-Hung Hsu, Jun Yan, Ke Jiang, <span
+                                    class="thisauthor">Yanfei Chen</span>, Jindong Gu, Long T. Le, Kai-Wei Chang, Chen-Yu
+                                Lee, Hamid Palangi, Tomas Pfister</span>
+                            <div class="pub-meta">
+                                <span class="badge" data-venue="ACL">ACL 2025</span>
+                                <a class="tag" href="https://aclanthology.org/2025.acl-long.1566.pdf" target="_blank" rel="noopener">pdf</a>
+                                <a class="tag" href="https://aclanthology.org/2025.acl-long.1566" target="_blank" rel="noopener">abstract</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ---------- 2024 ---------- -->
+                    <div class="year-group">
+                        <div class="year-head">2024</div>
+
+                        <div class="paper" data-selected="true">
+                            <span class="papertitle">Chain of Agents: Large Language Models Collaborating on
+                                Long-context Tasks</span>
+                            <span class="authors">Yusen Zhang, Ruoxi Sun, <span class="thisauthor">Yanfei Chen</span>,
+                                Tomas Pfister, Rui Zhang, Sercan Arik</span>
+                            <div class="pub-meta">
+                                <span class="badge" data-venue="NeurIPS">NeurIPS 2024</span>
+                                <a class="tag" href="https://proceedings.neurips.cc/paper_files/paper/2024/file/ee71a4b14ec26710b39ee6be113d7750-Paper-Conference.pdf" target="_blank" rel="noopener">pdf</a>
+                                <a class="tag" href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/ee71a4b14ec26710b39ee6be113d7750-Abstract-Conference.html" target="_blank" rel="noopener">abstract</a>
+                            </div>
+                        </div>
+
+                        <div class="paper" data-selected="true">
+                            <span class="papertitle">TableRAG: Million-Token Table Understanding with Language
+                                Models</span>
+                            <span class="authors">Si-An Chen, Lesly Miculicich, Julian Eisenschlos, Zifeng Wang, Zilong
+                                Wang, <span class="thisauthor">Yanfei Chen</span>, Yasuhisa Fujii, Hsuan-Tien Lin,
+                                Chen-Yu Lee, Tomas Pfister</span>
+                            <div class="pub-meta">
+                                <span class="badge" data-venue="NeurIPS">NeurIPS 2024</span>
+                                <a class="tag" href="https://proceedings.neurips.cc/paper_files/paper/2024/file/88dd7aa6979e352fda7c4952ca8eac59-Paper-Conference.pdf" target="_blank" rel="noopener">pdf</a>
+                                <a class="tag" href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/88dd7aa6979e352fda7c4952ca8eac59-Abstract-Conference.html" target="_blank" rel="noopener">abstract</a>
+                            </div>
+                        </div>
+
+                        <div class="paper" data-selected="true">
+                            <span class="papertitle">Re-Invoke: Tool Invocation Rewriting for Zero-Shot Tool
+                                Retrieval</span>
+                            <span class="authors"><span class="thisauthor">Yanfei Chen</span>, Jinsung Yoon, Devendra
+                                Singh Sachan, Qingze Wang, Vincent Cohen-Addad, Mohammadhossein Bateni, Chen-Yu Lee,
+                                Tomas Pfister</span>
+                            <div class="pub-meta">
+                                <span class="badge" data-venue="EMNLP">EMNLP 2024</span>
+                                <a class="tag" href="https://aclanthology.org/2024.findings-emnlp.270.pdf" target="_blank" rel="noopener">pdf</a>
+                                <a class="tag" href="https://aclanthology.org/2024.findings-emnlp.270" target="_blank" rel="noopener">abstract</a>
+                            </div>
+                        </div>
+
+                        <div class="paper">
+                            <span class="papertitle">Search-Adaptor: Embedding Customization for Information
+                                Retrieval</span>
+                            <span class="authors">Jinsung Yoon, <span class="thisauthor">Yanfei Chen</span>, Sercan
+                                Arik, Tomas Pfister</span>
+                            <div class="pub-meta">
+                                <span class="badge" data-venue="ACL">ACL 2024</span>
+                                <a class="tag" href="https://aclanthology.org/2024.acl-long.661.pdf" target="_blank" rel="noopener">pdf</a>
+                                <a class="tag" href="https://aclanthology.org/2024.acl-long.661" target="_blank" rel="noopener">abstract</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <p class="header pt-5" id="academic">Academic Services</p>
-                <div class="py-2">
-                    <b>Reviewer</b>: ARR, NeurIPS (Outstanding Reviewer'25)
-                </div>
-            </div>
+                <p class="scholar-note">
+                    See my
+                    <a class="in-text" href="https://scholar.google.com/citations?user=qyua6O4AAAAJ" target="_blank" rel="noopener">Google
+                        Scholar</a> for the full and most up-to-date list of publications.
+                </p>
+            </section>
 
-        </div>
+            <!-- ===================== Service ===================== -->
+            <section id="service">
+                <h3 class="header">Academic Service</h3>
+                <div class="entry">
+                    <span class="when">Reviewer</span>
+                    <span class="what">ARR, NeurIPS <span class="sub">(Outstanding Reviewer, 2025)</span></span>
+                </div>
+            </section>
+
+            <!-- ===================== Hobbies ===================== -->
+            <section id="hobbies">
+                <h3 class="header">Beyond Research</h3>
+                <div class="entry">
+                    <span class="when"></span>
+                    <span class="what">Reading, photography, and traveling. Watching NFL games — let's go
+                        Steelers!</span>
+                </div>
+            </section>
+        </main>
     </div>
 
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
-        /* Add space to the bottom of the page */
-        body {
-            padding-bottom: 100px;
-        }
-    </style>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-    <script src="assets/style-2.js"></script>
+    <script src="assets/main.js"></script>
 </body>
-<style>
-</style>
 
 </html>
